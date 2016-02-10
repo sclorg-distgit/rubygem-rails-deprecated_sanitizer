@@ -5,11 +5,11 @@
 %global gem_name rails-deprecated_sanitizer
 
 # To break BuildReq loop between this and actionview
-%global bootstrap 1
+%global bootstrap 0
 
 Name: %{?scl_prefix}rubygem-%{gem_name}
 Version: 1.0.3
-Release: 4%{?dist}
+Release: 5%{?dist}
 Summary: Deprecated sanitizer API extracted from Action View
 Group: Development/Languages
 License: MIT
@@ -108,6 +108,9 @@ popd
 %{gem_instdir}/test
 
 %changelog
+* Wed Feb 10 2016 Dominic Cleal <dcleal@redhat.com> 1.0.3-5
+- Enable package check
+
 * Fri Jan 22 2016 Dominic Cleal <dcleal@redhat.com> 1.0.3-4
 - Rebuild for sclo-ror42 SCL
 
