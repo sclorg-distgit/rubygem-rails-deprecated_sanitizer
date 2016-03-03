@@ -5,11 +5,11 @@
 %global gem_name rails-deprecated_sanitizer
 
 # Tests require rails-dom-testing, which depends on rails-deprecated_sanitizer
-%global bootstrap 1
+%global bootstrap 0
 
 Name: %{?scl_prefix}rubygem-%{gem_name}
 Version: 1.0.3
-Release: 5%{?dist}
+Release: 6%{?dist}
 Summary: Deprecated sanitizer API extracted from Action View
 Group: Development/Languages
 License: MIT
@@ -105,7 +105,7 @@ popd
 %{gem_instdir}/test
 
 %changelog
-* Sat Feb 20 2016 Pavel Valena <pvalena@redhat.com> - 1.0.3-5
+* Sat Feb 20 2016 Pavel Valena <pvalena@redhat.com> - 1.0.3-6
 - Add scl macros
 
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 1.0.3-4
